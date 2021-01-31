@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/fonsecond">
+
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="com.aknur.fragmentsputdata.SendFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_send" />
+
+    <LinearLayout
+        android:id="@+id/acthides"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/second_fragment"
+        android:name="com.aknur.fragmentsputdata.GetDataFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_get_data" />
+</LinearLayout>
+
+</LinearLayout>
